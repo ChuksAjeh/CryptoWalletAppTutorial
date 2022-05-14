@@ -3,12 +3,16 @@ import {
     View,
     Text
 } from 'react-native';
+import MainLayout from './MainLayout';
 
 const Home = () => {
     return (
-        <View>
-            <Text>Home</Text>
-        </View>
+        <MainLayout>
+            <View>
+                <Text>Home</Text>
+            </View>
+        </MainLayout>
+        
     )
 }
 

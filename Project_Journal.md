@@ -168,6 +168,18 @@ Now for the other tabs, we wanted them to disappear when the trade button is pre
 
 We want to create the two trade button options. As they will be using a common button/same button, we want to make this as a component that can be reused. this is what we have done in `IconTextButton.js`
 
+The `IconTextButton` component returns a `TouchableOpacity` component that contains an image and text on pressing the button, the opacity of the button is reduced thereby dimming it.
+
+After creating two instances of the `IconTextButton`,
+one for withdraw and transfer, we go back to the `MainLayout` to Dim the background. The idea is that if the TradeModal buttons are visible, then we dim the screen background 'behind'.
+
+### Coingecko API Integration:
+
+Aim: For the homescreen we want to build out the UI shown in the mockup; This will show the current wallet value with the option to tranfer(deposit) or withdraw as well as populating the screen with the current top Cryptocurrencies based on an API that we wil be using.
+
+We integrate an API to achieve the above. The name of the API is Coingecko. We will be using react-redux-actions and the axios library.
+
+
 --- 
 
 ## React Native Concepts Used:
